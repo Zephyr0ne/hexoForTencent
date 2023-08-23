@@ -12,14 +12,14 @@ layout: "contact"
 
 ## 友链
 ---
-洪卫の友链信息
+友链信息
 
-博客名称: 洪卫の博客
+博客名称: Zephyr0ne
 
-博客网址: https://sunhwee.com
+博客网址: https://maydaylife.cn
 
-博客头像: http://sunhwee.com/hwsun.jpg
+博客头像: https://zephyr0ne-1317564640.cos.ap-chengdu.myqcloud.com/zp.jpeg
 
-博客介绍: UESTC  CVer！
+博客介绍: 想早点躺平的小废物
 
 

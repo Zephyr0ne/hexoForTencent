@@ -4,21 +4,23 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: 洪卫的博客
-subtitle: 洪卫的博客
-description: 电子科技大学 | 电子与通信工程 | 计算机视觉
-keywords: UESTC CV DeepLearning MachineLearning 洪卫 sunhw Hongwei 计算机视觉 深度学习
-author: 洪卫
+title: Zephyr0ne
+subtitle: '转眼'
+description: 'Mayday In My Life'
+keywords:
+author: Zephyr0ne
 language: zh-CN
-timezone:
+timezone: Asia/Shanghai
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
 # url: https://shw2018.github.io/
-url: https://sunhwee.com
+url: https://maydaylife.cn
 root: /
 permalink: :year/:month/:day/:title/
-permalink_defaults:
+abbrlink:
+  alg: crc32   #算法： crc16(default) and crc32
+  rep: hex     #进制： dec(default) and hex
 
 # Directory
 source_dir: source
@@ -34,23 +36,34 @@ skip_render:
 new_post_name: :title.md # File name of new posts
 default_layout: post
 titlecase: false # Transform title into titlecase
-external_link: true # Open external links in new tab
+external_link:
+  enable: true # Open external links in new tab
+  field: site # Apply to the whole site
+  exclude: ''
 filename_case: 0
 render_drafts: false
-post_asset_folder: true
+post_asset_folder: false
 relative_link: false
 future: true
 highlight:
   enable: false
-  line_number: false
+  line_number: true
   auto_detect: false
-  tab_replace:
+  tab_replace: ''
+  wrap: true
+  hljs: false
 
 prism_plugin:
   mode: 'preprocess'    # realtime/preprocess
   theme: 'tomorrow'
-  line_number: true    # default false
-  custom_css: 
+  line_number: false    # default false
+  custom_css:
+
+prismjs:
+  enable: false
+  preprocess: true
+  line_number: true
+  tab_replace: ''
 
 search:
   path: search.xml
@@ -70,15 +83,15 @@ feed:
   content_limit_delim: ' '
   order_by: -date
 
-Plugins:
-- hexo-generator-baidu-sitemap
-- hexo-generator-sitemap
+#Plugins:
+#- hexo-generator-baidu-sitemap
+#- hexo-generator-sitemap
+#
+#baidusitemap:
+#    path: baidusitemap.xml
+#sitemap:
+#    path: sitemap.xml
 
-baidusitemap:
-    path: baidusitemap.xml
-sitemap:
-    path: sitemap.xml
-  
 # Home page setting
 # path: Root path for your blogs index page. (default = '')
 # per_page: Posts displayed per page. (0 = disable pagination)
@@ -87,7 +100,7 @@ index_generator:
   path: ''
   per_page: 12
   order_by: -date
-  
+
 # Category & Tag
 default_category: uncategorized
 category_map:
@@ -115,19 +128,8 @@ theme: matery
 deploy:
 - type: git
   repo:
-    github:  https://github.com/shw2018/shw2018.github.io.git
-    # coding: https://git.coding.net/hwsun/hwsun.git
-    # gitee: https://gitee.com/hwsun/hwsun.git
+    github:  git@github.com:Zephyr0ne/hexoForTencent.git
   branch: master
-- type: baidu_url_submitter
-
-# baidu submit
-baidu_url_submit:
-  count: 80                                      # 提交最新的一个链接
-  host: sunhwee.com     # 在百度站长平台中注册的域名
-  token: XXXXXXXXXXXXXXX    # 请注意这是您的秘钥， 所以请不要把博客源代码发布在公众仓库里!
-  path: baidu_urls.txt                # 文本文档的地址， 新链接会保存在此文本文档里
-
 
 
 live2d:
@@ -150,7 +152,7 @@ live2d:
     show: false
   react:
     opacity: 0.7
-   
+
 githubEmojis:
   enable: true
   className: github-emoji
@@ -173,6 +175,6 @@ githubEmojis:
 
 # lazyload configuration  2019.08.14
 lazyload:
-  enable: true 
+  enable: true
   onlypost: true
-  loadingImg: https://cdn.jsdelivr.net/gh/shw2018/cdn@1.0/sakura/img/loader/orange.progress-bar-stripe-loader.svg    # eg ./images/loading.gif
+  loadingImg: https://zephyr0ne-1317564640.cos.ap-chengdu.myqcloud.com/loading.gif

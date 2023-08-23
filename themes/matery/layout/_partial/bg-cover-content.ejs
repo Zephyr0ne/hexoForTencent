@@ -23,18 +23,19 @@
             <div class="description center-align">
                 <% if (config.description && config.description.length > 0) { %>
                     <!-- <%= config.description %> -->
-                    <%- '<span id="jinrishici-sentence">正在加载今日诗词...</span>' %>
+<!--                    <%- '<span id="jinrishici-sentence">Mayday In My Life</span>' %>-->
+                    <%- '<span>Mayday In My Life</span>' %>
                 <% } else { %>
                     This is your root _config.yml 'description' value.
                 <% } %>
             </div>
-            
-            
+
+
         </div>
     </div>
 </div>
 <script>
 // 每天切换 banner 图.  Switch banner image every day.
-$('.bg-cover').css('background-image', 'url(/medias/banner/' + new Date().getDay() + '.jpg)');
+$('.bg-cover').css('background-image', 'url(https://zephyr0ne-1317564640.cos.ap-chengdu.myqcloud.com/0.jpg)');
 </script>
 
