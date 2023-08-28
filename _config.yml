@@ -128,12 +128,12 @@ theme: matery
 deploy:
 - type: git
   repo:
-    github:  git@github.com:Zephyr0ne/hexoForTencent.git
+    github:  root@106.53.125.202:/var/repo/blog.git
   branch: master
 
 
 live2d:
-  enable: true
+  enable: false
   scriptFrom: local
   pluginRootPath: live2dw/
   pluginJsPath: lib/

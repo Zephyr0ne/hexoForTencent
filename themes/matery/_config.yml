@@ -101,7 +101,7 @@ recommend:
 
 # Configure website favicon and LOGO
 # 配置网站favicon和网站LOGO
-favicon: /favicon.png
+favicon: https://zephyr0ne-1317564640.cos.ap-chengdu.myqcloud.com/favicon.png
 #logo: https://zephyr0ne-1317564640.cos.ap-chengdu.myqcloud.com/transformers_PNG58.png
 
 # The configuration of the second button in the home banner,
@@ -110,7 +110,7 @@ favicon: /favicon.png
 indexbtn:
   enable: true
   name: 龙的网站
-  icon: fas fa-dragon
+  icon: fa-heart
   url: https://zephyr0ne.cn
 
 # The configurations of the second line of home banner
@@ -306,7 +306,7 @@ valine:
   avatar: 'mm' # Gravatar style : mm/identicon/monsterid/wavatar/retro/hide
   pageSize: 12
   placeholder: '来两句?' # Comment Box placeholder
-  background: /medias/comment_bg.png
+  background: https://zephyr0ne-1317564640.cos.ap-chengdu.myqcloud.com/comment_bg.png
   language: zh-cn
 
 # Whether to display fork me on github icon and link, default true, You can change it to your repo address
@@ -415,30 +415,30 @@ libs:
 # The post featured images that needs to be displayed when there is no image.
 # 无文章特色图片时需要显示的文章特色图片.
 featureImages:
-- /medias/featureimages/0.jpg
-- /medias/featureimages/1.jpg
-- /medias/featureimages/2.jpg
-- /medias/featureimages/3.jpg
-- /medias/featureimages/4.jpg
-- /medias/featureimages/5.jpg
-- /medias/featureimages/6.jpg
-- /medias/featureimages/7.jpg
-- /medias/featureimages/8.jpg
-- /medias/featureimages/9.jpg
-- /medias/featureimages/10.jpg
-- /medias/featureimages/11.jpg
-- /medias/featureimages/12.jpg
-- /medias/featureimages/13.jpg
-- /medias/featureimages/14.jpg
-- /medias/featureimages/15.jpg
-- /medias/featureimages/16.jpg
-- /medias/featureimages/17.jpg
-- /medias/featureimages/18.jpg
-- /medias/featureimages/19.jpg
-- /medias/featureimages/20.jpg
-- /medias/featureimages/21.jpg
-- /medias/featureimages/22.jpg
-- /medias/featureimages/23.jpg
+  - https://zephyr0ne-1317564640.cos.ap-chengdu.myqcloud.com//1.jpg
+  - https://zephyr0ne-1317564640.cos.ap-chengdu.myqcloud.com//2.jpg
+  - https://zephyr0ne-1317564640.cos.ap-chengdu.myqcloud.com//3.jpg
+  - https://zephyr0ne-1317564640.cos.ap-chengdu.myqcloud.com//4.jpg
+  - https://zephyr0ne-1317564640.cos.ap-chengdu.myqcloud.com//5.jpg
+  - https://zephyr0ne-1317564640.cos.ap-chengdu.myqcloud.com//6.jpg
+  - https://zephyr0ne-1317564640.cos.ap-chengdu.myqcloud.com//7.jpg
+  - https://zephyr0ne-1317564640.cos.ap-chengdu.myqcloud.com//8.jpg
+  - https://zephyr0ne-1317564640.cos.ap-chengdu.myqcloud.com//9.jpg
+  - https://zephyr0ne-1317564640.cos.ap-chengdu.myqcloud.com//10.jpg
+  - https://zephyr0ne-1317564640.cos.ap-chengdu.myqcloud.com//11.jpg
+  - https://zephyr0ne-1317564640.cos.ap-chengdu.myqcloud.com//12.jpg
+  - https://zephyr0ne-1317564640.cos.ap-chengdu.myqcloud.com//13.jpg
+  - https://zephyr0ne-1317564640.cos.ap-chengdu.myqcloud.com//14.jpg
+  - https://zephyr0ne-1317564640.cos.ap-chengdu.myqcloud.com//15.jpg
+  - https://zephyr0ne-1317564640.cos.ap-chengdu.myqcloud.com//16.jpg
+  - https://zephyr0ne-1317564640.cos.ap-chengdu.myqcloud.com//17.jpg
+  - https://zephyr0ne-1317564640.cos.ap-chengdu.myqcloud.com//18.jpg
+  - https://zephyr0ne-1317564640.cos.ap-chengdu.myqcloud.com//19.jpg
+  - https://zephyr0ne-1317564640.cos.ap-chengdu.myqcloud.com//20.jpg
+  - https://zephyr0ne-1317564640.cos.ap-chengdu.myqcloud.com//21.jpg
+  - https://zephyr0ne-1317564640.cos.ap-chengdu.myqcloud.com//22.jpg
+  - https://zephyr0ne-1317564640.cos.ap-chengdu.myqcloud.com//23.jpg
+  - https://zephyr0ne-1317564640.cos.ap-chengdu.myqcloud.com//24.jpg
 
   # default configs that the default policy for every articles/posts
   # default 配置文章的默认转载规则
