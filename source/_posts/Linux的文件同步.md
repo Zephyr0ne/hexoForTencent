@@ -41,7 +41,7 @@ tags:                   #文章标签，一篇文章可以多个标签
 
 ## **同步配置**
 
-    1. 随便在一个目录下新建一个脚本文件,并且赋予权限(777为超级权限,懒人必用,一般按照自己的需求去添加权限)
+1. 随便在一个目录下新建一个脚本文件,并且赋予权限(777为超级权限,懒人必用,一般按照自己的需求去添加权限)
 
    ```
    touch /home/filesync.sh
@@ -49,27 +49,27 @@ tags:                   #文章标签，一篇文章可以多个标签
    chmod +777 /home/filesync.sh
    ```
 
-    2. 编辑脚本内容
+2. 编辑脚本内容
 
-       ```c
-       vim /home/filesync.sh
-       #复制下面的内容到文件中去
-       src=/home/filesync
-       inotifywait -mrq --timefmt '%d/%m/%y %H:%M' --format '%T %w%f%e' -e modify,move,close_write,delete,create,attrib $src |  while read file
-       do
-                   # rsync -avz  /source   /target
-                   # rsync的相关命令 自行百度
-             rsync -avz /var/www/hexo/ /data/nginx/page/hexo/
-                    # 输出日志文件
-             echo "  ${file} was rsynced" >>/home/filesync.log 2>&1
-       done
-       ```
+   ```c
+   vim /home/filesync.sh
+   #复制下面的内容到文件中去
+   src=/home/filesync
+   inotifywait -mrq --timefmt '%d/%m/%y %H:%M' --format '%T %w%f%e' -e modify,move,close_write,delete,create,attrib $src |  while read file
+   do
+               # rsync -avz  /source   /target
+               # rsync的相关命令 自行百度
+         rsync -avz /var/www/hexo/ /data/nginx/page/hexo/
+                # 输出日志文件
+         echo "  ${file} was rsynced" >>/home/filesync.log 2>&1
+   done
+   ```
 
-    3. 执行脚本
+3. 执行脚本
 
-       ```
-       nohup /home/filesync.sh > /home/filesync.out 2>&1 &
-       ```
+   ```
+   nohup /home/filesync.sh > /home/filesync.out 2>&1 &
+   ```
 
 
 
